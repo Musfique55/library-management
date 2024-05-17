@@ -12,6 +12,7 @@ import Home from './Components/Home.jsx';
 import AddBooks from './Components/AddBooks.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
 import Allbooks from './Components/Allbooks.jsx';
+import UpdateBooks from './Components/UpdateBooks.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
         path : '/allbooks',
         element : <Allbooks></Allbooks>,
         loader : () => fetch('https://library-management-server-ten.vercel.app/allbooks')
+      },
+      {
+        path : '/allbooks/:id',
+        element : <UpdateBooks></UpdateBooks>,
+        loader : ({params}) => fetch(`https://library-management-server-ten.vercel.app/allbooks/${params.id}`)
       },
       {
         path : '/addbooks',

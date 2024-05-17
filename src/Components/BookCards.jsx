@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 const BookCards = ({book}) => {
-    const {image,author,category,name,quantity,rating} = book;
+    const {image,author,category,name,quantity,rating,_id} = book;
     return (
         <div className='border p-5 rounded-lg'>
             <div>
@@ -30,7 +31,9 @@ const BookCards = ({book}) => {
                 </div>
                 <p>Available : {quantity}</p>
                 </div>
+                <Link to={`/allbooks/${_id}`}>
                 <button className='w-full bg-[#17A288] py-3 font-medium rounded-full text-white'>Update</button>
+                </Link>
             </div>
         </div>
     );

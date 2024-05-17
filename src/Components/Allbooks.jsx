@@ -3,7 +3,6 @@ import BookCards from "./BookCards";
 
 const Allbooks = () => {
     const books = useLoaderData();
-    console.log(books);
     return (
         <div className="grid grid-cols-1 gap-6 m-5 md:grid-cols-2 md:m-12 lg:grid-cols-3 lg:mx-20 lg:my-12">
             {
