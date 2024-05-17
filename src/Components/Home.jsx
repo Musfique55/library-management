@@ -10,14 +10,13 @@ const Home = () => {
     const [categories,setCategories] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:3000/categories')
+        fetch('https://library-management-server-ten.vercel.app/categories')
         .then(res => res.json())
         .then(data  => {
             setCategories(data)
         })
     },[])
 
-    console.log(categories);
     return (
         <div>
            <div>

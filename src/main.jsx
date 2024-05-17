@@ -13,6 +13,8 @@ import AddBooks from './Components/AddBooks.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
 import Allbooks from './Components/Allbooks.jsx';
 import UpdateBooks from './Components/UpdateBooks.jsx';
+import SpecificCategory from './Components/SpecificCategory.jsx';
+import BookDetails from './Components/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,17 @@ const router = createBrowserRouter([
       {
         path : '/addbooks',
         element : <PrivateRoute><AddBooks></AddBooks></PrivateRoute>
+      },
+      {
+        path : '/category/:book',
+        element : <PrivateRoute><SpecificCategory></SpecificCategory></ PrivateRoute>,
+        loader : ({params}) => fetch(`http://localhost:3000/books/${params.book}`)
+
+      },
+      {
+        path : 'book-details/:id',
+        element : <PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
+        loader : ({params}) => fetch(`https://library-management-server-ten.vercel.app/allbooks/${params.id}`)
       }
     ]
   }
