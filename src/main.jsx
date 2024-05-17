@@ -29,12 +29,12 @@ const router = createBrowserRouter([
       },
       {
         path : '/allbooks',
-        element : <Allbooks></Allbooks>,
+        element : <PrivateRoute><Allbooks></Allbooks></PrivateRoute>,
         loader : () => fetch('https://library-management-server-ten.vercel.app/allbooks')
       },
       {
         path : '/allbooks/:id',
-        element : <UpdateBooks></UpdateBooks>,
+        element : <PrivateRoute><UpdateBooks></UpdateBooks></PrivateRoute>,
         loader : ({params}) => fetch(`https://library-management-server-ten.vercel.app/allbooks/${params.id}`)
       },
       {

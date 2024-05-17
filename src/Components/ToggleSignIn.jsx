@@ -3,10 +3,13 @@ import { AuthContext } from "./AuthProvider";
 import email from '../../public/email.png';
 import googleIcon from '../../public/google.png';
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const ToggleSignIn = () => {
     const {googleLogin,register,login,logout,update} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
 
 
     const handleLogin = (e) => {
@@ -24,6 +27,7 @@ const ToggleSignIn = () => {
                     timer: 1500
                   });
             }
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
             const message = error?.message;
@@ -87,6 +91,7 @@ const ToggleSignIn = () => {
             update(name,photoURL)
             .then(() => {
                 logout();
+                navigate('/login');
             })
         })
         .catch(error => {
@@ -105,8 +110,8 @@ const ToggleSignIn = () => {
 
     const google = () => {
         googleLogin()
-        .then(res => {
-            console.log(res);
+        .then(() => {
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
             console.log(error);
