@@ -2,15 +2,16 @@ import PropTypes from 'prop-types';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 const BookCards = ({book}) => {
+
     const {image,author,category,name,quantity,rating,_id} = book;
     return (
-        <div className='border p-5 rounded-lg'>
+        <div className='border p-5 rounded-lg space-y-4'>
             <div>
-                <img src={image} alt="" />
+                <img src={image} alt="" className='w-full object-cover h-[400px] rounded-md'/>
             </div>
-            <div>
-                <h3>{name}</h3>
-                <div className="flex justify-between items-center">
+            <div className="mt-4">
+                <h3 className="font-semibold text-2xl">{name}</h3>
+                <div className="flex justify-between items-center text-base font-medium mt-4">
                     <p>{author}</p>
                     <p>{category}</p>
                 </div>
