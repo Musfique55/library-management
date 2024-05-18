@@ -15,8 +15,8 @@ const BookCards = ({book}) => {
                     <p>{author}</p>
                     <p>{category}</p>
                 </div>
-                <div className="flex justify-between items-center">
-                <div className="flex gap-3 items-center">
+                <div className="flex justify-between items-center mt-4">
+                <div className="flex gap-3 items-center font-medium text-base">
                 <ReactStars
                     count={5}
                     size={24}
@@ -30,10 +30,10 @@ const BookCards = ({book}) => {
                 />
                 <p>{rating}</p>
                 </div>
-                <p>Available : {quantity}</p>
+                <p className=' font-medium text-base'>Available : {quantity}</p>
                 </div>
                 <Link to={`/allbooks/${_id}`}>
-                <button className='w-full bg-[#17A288] py-3 font-medium rounded-full text-white'>Update</button>
+                <button className='w-full bg-[#17A288] py-3 font-medium rounded-full text-white mt-4'>Update</button>
                 </Link>
             </div>
         </div>

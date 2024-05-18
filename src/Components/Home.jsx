@@ -12,16 +12,22 @@ const Home = () => {
     useEffect(() =>{
         fetch('https://library-management-server-ten.vercel.app/categories')
         .then(res => res.json())
-        .then(data  => {
+        .then(data  => {  
             setCategories(data)
         })
     },[])
-
+    
+    
     return (
         <div>
            <div>
+           
             <h3 className="text-start px-20 font-semibold text-4xl my-12">Categories</h3>
                 <div>
+                {
+            (categories.length === 0) &&   <div className="flex justify-center items-center"><span className="loading block loading-infinity loading-lg"></span></div>
+    
+           }
                     <Swiper
                         style={{'padding-left': '80px', 'padding-right': '80px' }}
                         slidesPerView={3}

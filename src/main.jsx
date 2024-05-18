@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       {
         path : '/category/:book',
         element : <PrivateRoute><SpecificCategory></SpecificCategory></ PrivateRoute>,
-        loader : ({params}) => fetch(`http://localhost:3000/books/${params.book}`)
+        loader : ({params}) => fetch(`https://library-management-server-ten.vercel.app/books/${params.book}`)
 
       },
       {
