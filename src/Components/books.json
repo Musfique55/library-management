@@ -1,0 +1,329 @@
+[
+        {
+          "image": "https://i.postimg.cc/d08W9yLy/mockingbird-square.jpg",
+          "name": "To Kill a Mockingbird",
+          "quantity": 50,
+          "author": "Harper Lee",
+          "category": "Novel",
+          "description": "A gripping tale of racial injustice and moral growth.",
+          "rating": 4.5
+        },
+        {
+          "image": "https://i.postimg.cc/7hQXL1Qp/81-8cdy-Qi-ML.jpg",
+          "name": "1984",
+          "quantity": 30,
+          "author": "George Orwell",
+          "category": "Novel",
+          "description": "A dystopian classic exploring the consequences of totalitarianism.",
+          "rating": 4.7
+        },
+        {
+          "image": "https://i.postimg.cc/dtp4PBCC/MV5-BMTA1-NDQ3-NTcy-OTNe-QTJe-QWpw-Z15-Bb-WU3-MDA0-Mz-A4-Mz-E-V1.jpg",
+          "name": "Pride and Prejudice",
+          "quantity": 25,
+          "author": "Jane Austen",
+          "category": "Novel",
+          "description": "A timeless romance novel set in the early 19th century.",
+          "rating": 4.8
+        },
+        {
+          "image": "https://i.postimg.cc/q7dwgvjM/the-great-gatsby-a-novel-1.jpg",
+          "name": "The Great Gatsby",
+          "quantity": 40,
+          "author": "F. Scott Fitzgerald",
+          "category": "Novel",
+          "description": "A tragic love story set in the roaring twenties.",
+          "rating": 4.6
+        },
+        {
+          "image": "https://i.postimg.cc/CKHN8pQC/640px-The-Catcher-in-the-Rye-1951-first-edition-cover.jpg",
+          "name": "The Catcher in the Rye",
+          "quantity": 20,
+          "author": "J.D. Salinger",
+          "category": "Novel",
+          "description": "A coming-of-age novel that has become a classic of modern literature.",
+          "rating": 4.4
+        },
+        {
+          "image": "https://i.postimg.cc/3RtFLC7d/33.jpg",
+          "name": "The Lord of the Rings",
+          "quantity": 35,
+          "author": "J.R.R. Tolkien",
+          "category": "Novel",
+          "description": "An epic fantasy adventure set in the fictional world of Middle-earth.",
+          "rating": 4.9
+        },
+        {
+          "image": "https://i.postimg.cc/cLByJtH4/images.jpg",
+          "name": "The Girl with the Dragon Tattoo",
+          "quantity": 40,
+          "author": "Stieg Larsson",
+          "category": "Thriller",
+          "description": "A gripping mystery involving murder, corruption, and intrigue.",
+          "rating": 4.6
+        },
+        {
+          "image": "https://i.postimg.cc/G2N6fkMz/gone-girl.webp",
+          "name": "Gone Girl",
+          "quantity": 35,
+          "author": "Gillian Flynn",
+          "category": "Thriller",
+          "description": "A psychological thriller about a woman's disappearance and its aftermath.",
+          "rating": 4.4
+        },
+        {
+          "image": "https://i.postimg.cc/wMmnY7Zz/Da-Vinci-Code.jpg",
+          "name": "The Da Vinci Code",
+          "quantity": 20,
+          "author": "Dan Brown",
+          "category": "Thriller",
+          "description": "A fast-paced adventure involving secret societies and hidden messages.",
+          "rating": 4.3
+        },
+        {
+          "image": "thriller4.jpg",
+          "name": "https://i.postimg.cc/nVy6YG9h/MV5-BNj-Nh-ZTk0-Zm-Et-Nj-Jh-Mi00-Yz-Fl-LWE1-Mm-Et-Yz-M1-M2-Zm-MGMw-MTU4-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-U0-OTQ0-OTY-V1.jpg",
+          "quantity": 25,
+          "author": "Thomas Harris",
+          "category": "Thriller",
+          "description": "A chilling psychological thriller featuring the infamous Dr. Hannibal Lecter.",
+          "rating": 4.7
+        },
+        {
+          "image": "https://i.postimg.cc/Ghv6MTvJ/MV5-BM2-Jk-NGU0-ZGMt-Zj-Vj-NS00-Njgy-LWEy-OWYt-Zm-Rm-ZGQy-N2-Ix-Zj-A2-Xk-Ey-Xk-Fqc-Gde-QXVy-NTIz-OTk5-ODM-V1.jpg",
+          "name": "The Bourne Identity",
+          "quantity": 30,
+          "author": "Robert Ludlum",
+          "category": "Thriller",
+          "description": "An action-packed spy thriller with twists and turns.",
+          "rating": 4.5
+        },
+        {
+          "image": "https://i.postimg.cc/QdswvNbL/Firm-ver2.jpg",
+          "name": "The Firm",
+          "quantity": 45,
+          "author": "John Grisham",
+          "category": "Thriller",
+          "description": "A legal thriller about a young attorney caught in a web of intrigue and danger.",
+          "rating": 4.2
+        },
+        {
+            "image": "https://i.postimg.cc/0QGyxcry/images-1.jpg",
+            "name": "The Guns of August",
+            "quantity": 10,
+            "author": "Barbara W. Tuchman",
+            "category": "History",
+            "description": "A gripping account of the outbreak of World War I.",
+            "rating": 4
+          },
+          {
+            "image": "https://i.postimg.cc/Kv88S7bm/images-2.jpg",
+            "name": "The Diary of a Young Girl",
+            "quantity": 15,
+            "author": "Anne Frank",
+            "category": "History",
+            "description": "Anne Frank's diary during the Holocaust.",
+            "rating": 5
+          },
+          {
+            "image": "https://i.postimg.cc/1zw9cJGr/emperor-of-all-maladies-400x400.jpg",
+            "name": "The Emperor of All Maladies",
+            "quantity": 8,
+            "author": "Siddhartha Mukherjee",
+            "category": "History",
+            "description": "A biography of cancer.",
+            "rating": 4
+          },
+          {
+            "image": "https://i.postimg.cc/tTb9rWDQ/images-3.jpg",
+            "name": "The Wright Brothers",
+            "quantity": 12,
+            "author": "David McCullough",
+            "category": "History",
+            "description": "The story of the inventors of the airplane.",
+            "rating": 4.5
+          },
+          {
+            "image": "https://i.postimg.cc/QC4sxPDh/711di-GRZp-VL-AC-UF1000-1000-QL80.jpg",
+            "name": "1491",
+            "quantity": 6,
+            "author": "Charles C. Mann",
+            "category": "History",
+            "description": "New revelations about the Americas before Columbus.",
+            "rating": 4.5
+          },
+          {
+            "image": "https://i.postimg.cc/cJRS86WD/2767.jpg",
+            "name": "A People's History of the United States",
+            "quantity": 7,
+            "author": "Howard Zinn",
+            "category": "History",
+            "description": "An alternative history of the United States.",
+            "rating": 4
+          },
+          {
+            "image": "https://i.postimg.cc/XJjTG8QJ/1-ml5-XMWy7-Zm-FSv1-NBMMUpig.jpg",
+            "name": "Hamlet",
+            "quantity": 20,
+            "author": "William Shakespeare",
+            "category": "Drama",
+            "description": "A tragedy by William Shakespeare.",
+            "rating": 5
+          },
+          {
+            "image": "https://i.postimg.cc/fL81x9rv/Death-Of-ASalesman.jpg",
+            "name": "Death of a Salesman",
+            "quantity": 12,
+            "author": "Arthur Miller",
+            "category": "Drama",
+            "description": "A play about the fading of the American Dream.",
+            "rating": 4.5
+          },
+          {
+            "image": "https://i.postimg.cc/MH44L8xM/MV5-BM2-Vk-Nj-Bj-Yjgt-YWQ1-OS00-Zj-Y4-LWIx-ZDct-MGRi-Y2-U5-NGI5-Mm-Jm-Xk-Ey-Xk-Fqc-Gde-QXVy-MTU3-NDU4-MDg2-V1.jpg",
+            "name": "A Streetcar Named Desire",
+            "quantity": 15,
+            "author": "Tennessee Williams",
+            "category": "Drama",
+            "description": "A play about the conflicts of Southern values.",
+            "rating": 4
+          },
+          {
+            "image": "https://i.postimg.cc/QdcPfPzC/MV5-BN2-Zh-OTQ5-NGUt-NDJi-Yy00-ZTM5-LWI5-MDIt-NDI3-OGZh-Yzlh-ZDRh-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-Uw-Nzk3-NDc-V1.jpg",
+            "name": "The Crucible",
+            "quantity": 18,
+            "author": "Arthur Miller",
+            "category": "Drama",
+            "description": "A play about the Salem witch trials.",
+            "rating": 4
+          },
+          {
+            "image": "https://i.postimg.cc/mDg52rg1/MV5-BYWM1-Zjli-OTYt-MTQy-OC00-Mj-E4-LTk2-Mz-Ut-ZGU5-ODdi-YTQz-N2-Yz-Xk-Ey-Xk-Fqc-Gde-QXVy-NTcw-Nj-Uw-Nzk-V1.jpg",
+            "name": "Romeo and Juliet",
+            "quantity": 25,
+            "author": "William Shakespeare",
+            "category": "Drama",
+            "description": "A tragedy about young love.",
+            "rating": 4.5
+          },
+          {
+            "image": "https://i.postimg.cc/hPd3G6cs/images-4.jpg",
+            "name": "The Glass Menagerie",
+            "quantity": 10,
+            "author": "Tennessee Williams",
+            "category": "Drama",
+            "description": "A memory play by Tennessee Williams.",
+            "rating": 4
+          },
+              {
+                "Image": "https://i.postimg.cc/vT398QDT/MV5-BMDQ0-Njgy-N2-Yt-NWVi-NS00-Yj-A3-LTkx-NDkt-Yz-Fk-ZTEx-ZGMx-ZDkx-Xk-Ey-Xk-Fqc-Gde-QXVy-ODE5-Nz-E3-OTE-V1-FMjpg-UX1000.jpg",
+                "Name": "Dune",
+                "Quantity": 10,
+                "Author Name": "Frank Herbert",
+                "Category": "Sci-fi",
+                "Short description": "A science fiction masterpiece about politics, religion, and power in a desert planet.",
+                "Rating": 5
+              },
+              {
+                "Image": "https://i.postimg.cc/RZ3f9xmC/9781399607773.jpg",
+                "Name": "Neuromancer",
+                "Quantity": 8,
+                "Author Name": "William Gibson",
+                "Category": "Sci-fi",
+                "Short description": "A seminal cyberpunk novel exploring artificial intelligence and virtual reality.",
+                "Rating": 4.5
+              },
+              {
+                "Image": "https://i.postimg.cc/mrCHz3h0/9780593497487.jpg",
+                "Name": "Foundation",
+                "Quantity": 12,
+                "Author Name": "Isaac Asimov",
+                "Category": "Sci-fi",
+                "Short description": "The epic saga of the decline and fall of the Galactic Empire.",
+                "Rating": 4.8
+              },
+              {
+                "Image": "https://i.postimg.cc/cC4gbVTS/image-a119dd78.jpg",
+                "Name": "The Martian",
+                "Quantity": 6,
+                "Author Name": "Andy Weir",
+                "Category": "Sci-fi",
+                "Short description": "A thrilling tale of survival and ingenuity on the Red Planet.",
+                "Rating": 4.7
+              },
+              {
+                "Image": "https://i.postimg.cc/7PmT2ZYY/Snowcrash.jpg",
+                "Name": "Snow Crash",
+                "Quantity": 7,
+                "Author Name": "Neal Stephenson",
+                "Category": "Sci-fi",
+                "Short description": "A post-cyberpunk novel exploring a dystopian future of corporate dominance.",
+                "Rating": 4.6
+              },
+              {
+                "Image": "imhttps://i.postimg.cc/VkbSp99d/Hyperion-cover.jpgage_url",
+                "Name": "Hyperion",
+                "Quantity": 9,
+                "Author Name": "Dan Simmons",
+                "Category": "Sci-fi",
+                "Short description": "A space opera intertwining multiple stories of pilgrims journeying to the enigmatic world of Hyperion.",
+                "Rating": 4.9
+              },
+              {
+                "Image": "https://i.postimg.cc/Y0zZCJrD/MV5-BYWFl-ZGY2-NDkt-Y2-Zj-OS00-ZWNk-LTg0-ZDAt-ZDY4-MTM1-ODU4-Zjlj-Xk-Ey-Xk-Fqc-Gde-QXVy-Mj-Uz-OTY1-NTc-V1-FMjpg-UX1000.jpg",
+                "Name": "The Exorcist",
+                "Quantity": 10,
+                "Author Name": "William Peter Blatty",
+                "Category": "Horror",
+                "Short description": "A terrifying tale of demonic possession and exorcism.",
+                "Rating": 4.7
+              },
+              {
+                "Image": "https://i.postimg.cc/T2VZ0WVj/71wytop-Nh-PL-AC-UF1000-1000-QL80.jpg",
+                "Name": "The Silence of the Lambs",
+                "Quantity": 8,
+                "Author Name": "Thomas Harris",
+                "Category": "Horror",
+                "Short description": "A gripping psychological thriller featuring the cannibalistic serial killer, Hannibal Lecter.",
+                "Rating": 4.8
+              },
+              {
+                "Image": "https://i.postimg.cc/ZKjXttDC/MV5-BNz-Y0-ODQ3-MTMx-N15-BMl5-Ban-Bn-Xk-Ft-ZTgw-MDkw-NTg4-Nj-E-V1.jpg",
+                "Name": "Misery",
+                "Quantity": 12,
+                "Author Name": "Stephen King",
+                "Category": "Horror",
+                "Short description": "A chilling story of a deranged fan who holds her favorite author captive.",
+                "Rating": 4.9
+              },
+              {
+                "Image": "https://i.postimg.cc/5y4pnjJp/images-5.jpg",
+                "Name": "The Amityville Horror",
+                "Quantity": 6,
+                "Author Name": "Jay Anson",
+                "Category": "Horror",
+                "Short description": "Based on a true story, this book tells the horrifying events that unfolded in a haunted house.",
+                "Rating": 4.6
+              },
+              {
+                "Image": "https://i.postimg.cc/tRkB7ddc/0-j-Etio7-Vys-CH6fp-PV.jpg",
+                "Name": "Psycho",
+                "Quantity": 7,
+                "Author Name": "Robert Bloch",
+                "Category": "Horror",
+                "Short description": "The chilling story of Norman Bates and the Bates Motel.",
+                "Rating": 4.5
+              },
+              {
+                "Image": "https://i.postimg.cc/BnLphrWW/Carrieposter.jpg",
+                "Name": "Carrie",
+                "Quantity": 9,
+                "Author Name": "Stephen King",
+                "Category": "Horror",
+                "Short description": "A tale of a bullied high school girl who discovers she has telekinetic powers.",
+                "Rating": 4.7
+              }        
+]
+
+
+

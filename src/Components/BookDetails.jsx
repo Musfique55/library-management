@@ -13,11 +13,11 @@ const BookDetails = () => {
   const userName = user?.displayName;
   
   const detailsWithUser = { ...details, email,userName,startDate };
- console.log(detailsWithUser);
+
   const handleBids = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/borrowed-books", detailsWithUser)
+      .post("https://library-management-server-ten.vercel.app/borrowed-books", detailsWithUser)
       .then((data) => {
         if (data.data.acknowledged) {
           Swal.fire({
@@ -28,6 +28,7 @@ const BookDetails = () => {
             timer: 1500,
             target: document.querySelector('dialog')
           });
+         
         }
       })
       .catch((error) => {
@@ -43,7 +44,11 @@ const BookDetails = () => {
           });
         }
       });
+
+      
   };
+
+  
   return (
     <div>
       <div className="grid grid-cols-2">
@@ -68,6 +73,7 @@ const BookDetails = () => {
         </div>
         <dialog id="my_modal_3" className="modal"  >
           <div className="modal-box h-[550px] p-12">
+            <button  onClick={()=>document.getElementById("my_modal_3").close()} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             <form method="dialog" onSubmit={handleBids}>
             <div className="form-control">
                         <label className="label">
