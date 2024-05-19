@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import ReactStars from "react-rating-stars-component";
 
 const BookDetails = () => {
   const details = useLoaderData();
@@ -60,10 +60,31 @@ const BookDetails = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2">
-        <img src={details.image} alt="" />
-        <div>
+      <div className="grid gap-6 grid-cols-1 m-5 md:grid-cols-2 md:m-12 lg:grid-cols-2 lg:mx-20 lg:my-12">
+        <img src={details.image} alt="" className="h-[600px] object-cover w-full "/>
+        <div className="space-y-5">
           <h3 className="text-3xl font-semibold ">{details.name}</h3>
+          <p className="text-medium text-xl">By {details.author}</p>
+          <ReactStars
+                    count={5}
+                    size={24}
+                    isHalf={true}
+                    value={details.rating}
+                    edit={false}
+                    emptyIcon={<i className="far fa-star"></i>}
+                    halfIcon={<i className="fa fa-star-half-alt"></i>}
+                    fullIcon={<i className="fa fa-star"></i>}
+                    activeColor="#ffd700"
+          />
+          <p>CHUAN, adding that there were two other CHUAN besides. This has brought forth a theory, that the bulk of these 82 chapters consisted of other writings of Sun Tzu -- we should call them apocryphal -- similar to the WEN TA, of which a specimen dealing with the Nine Situations [15] is preserved in the T`UNG TIEN, and another in Ho Shins commentary. It is suggested that before his interview with Ho Lu, Sun Tzu had only written the 13 chapters, but afterwards composed a sort of exegesis in the form of question and answer between himself and the King. Pi I-hsun, the author of the SUN TZU HSU LU, backs this up with a quotation from the WU YUEH CH`UN CH`IU The King of Wu summoned Sun Tzu, and asked him questions about the art of war.</p>
+
+         <div className="flex mt-5 items-center justify-between">
+         <p><span className=" py-2 px-5 bg-green-200 rounded-full text-green-500 font-semibold">{details.category}</span></p> 
+         <p className="text-green-500 font-medium">Available : {details.quantity}</p>
+         </div>
+        
+        <br />  
+        
           { details.quantity > 0 && borrowCount.length < 3 ? 
             <button id="borrow"
             onClick={()=>document.getElementById('my_modal_3').showModal()}

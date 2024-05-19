@@ -17,7 +17,7 @@ const BorrowedBooks = () => {
     
     
     const handleReturn = (id) => {
-        axios.delete(`http://localhost:3000/borrowed-books/${id}`)
+        axios.delete(`https://library-management-server-ten.vercel.app/borrowed-books/${id}`)
         .then(data => {
             if(data.data.deletedCount > 0){
                 Swal.fire({
