@@ -15,6 +15,7 @@ import Allbooks from './Components/Allbooks.jsx';
 import UpdateBooks from './Components/UpdateBooks.jsx';
 import SpecificCategory from './Components/SpecificCategory.jsx';
 import BookDetails from './Components/BookDetails.jsx';
+import BorrowedBooks from './Components/BorrowedBooks.jsx';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         path : 'book-details/:id',
         element : <PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
         loader : ({params}) => fetch(`https://library-management-server-ten.vercel.app/allbooks/${params.id}`)
+      },
+      {
+        path : '/borrowed-books',
+        element : <PrivateRoute><BorrowedBooks></BorrowedBooks></PrivateRoute>
       }
     ]
   }

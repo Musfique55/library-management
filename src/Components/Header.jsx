@@ -24,9 +24,9 @@ const Header = () => {
                     }
                     {
                         user &&
-                        <NavLink to='/borrowedbooks' className={({isActive}) => isActive ? 'text-white font-semibold text-base' : 'font-medium text-base'} >Borrowed Books</NavLink>
+                        <NavLink to='/borrowed-books' className={({isActive}) => isActive ? 'text-white font-semibold text-base' : 'font-medium text-base'} >Borrowed Books</NavLink>
                     }
-                    <NavLink to="/contact" className={({isActive}) => isActive ? 'text-white font-semibold ' : 'text-base font-medium'}>Contact</NavLink>
+                    
                 </ul>
                 </div>
                 <img src={logo} alt="logo" />
@@ -44,27 +44,21 @@ const Header = () => {
                     }
                     {
                         user &&
-                        <NavLink to='/borrowedbooks' className={({isActive}) => isActive ? 'text-white font-semibold text-base' : 'font-medium text-base'} >Borrowed Books</NavLink>
+                        <NavLink to='/borrowed-books' className={({isActive}) => isActive ? 'text-white font-semibold text-base' : 'font-medium text-base'} >Borrowed Books</NavLink>
                     }
                     
                 </ul>
             </div>
             {  
                 user ?
-                 <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
+                 <div className="flex gap-3 items-center">
+                    <div  className="btn btn-ghost btn-circle avatar">
+                      <div className="w-10 rounded-full">
                         <img src={user?.photoURL} />
+                      </div>
                     </div>
-                    </div>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li>
-                    <a className="justify-between">
-                      {user?.displayName}
-                    </a>
-                  </li>
-                  <li onClick={logout}><a>Logout</a></li>
-                </ul>
+                    <p className="text-white">{user?.displayName}</p>
+                    <i onClick={logout} className="fa-solid fa-right-from-bracket text-2xl cursor-pointer"  style={{color: "#ffffff"}}></i>
             </div> : 
             <Link className='"btn bg-[#17a288] px-5 py-2 rounded-lg text-white font-semibold' to="/login">Login</Link>
             }
@@ -72,5 +66,4 @@ const Header = () => {
     </div>
     );
 };
-
 export default Header;

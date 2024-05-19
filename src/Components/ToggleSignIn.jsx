@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 
 const ToggleSignIn = () => {
-    const {googleLogin,register,login,logout,update} = useContext(AuthContext);
+    const {googleLogin,register,login,update} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -90,9 +90,8 @@ const ToggleSignIn = () => {
               });
             update(name,photoURL)
             .then(() => {
-                logout();
-                navigate('/login');
             })
+            navigate('/');
         })
         .catch(error => {
             const message = error?.message;
@@ -111,6 +110,13 @@ const ToggleSignIn = () => {
     const google = () => {
         googleLogin()
         .then(() => {
+            Swal.fire({
+                position: "top",
+                icon: "success",
+                title: "Logged in Successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
             navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
