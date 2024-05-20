@@ -7,6 +7,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import play from '../../public/play-store.png';
 import app from '../../public/app-store.png';
+import Banner from "./Banner";
 const Home = () => {
 
     const [categories,setCategories] = useState([]);
@@ -22,6 +23,16 @@ const Home = () => {
     
     return (
         <div>
+            {/* banner */}
+            <div>
+                <Banner></Banner>
+            </div>
+            
+            {/* all books */}
+            <div>
+
+            </div>
+            {/* categories */}
            <div>
            
             <h3 className="text-start px-20 font-semibold text-4xl my-12">Categories</h3>
