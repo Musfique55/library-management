@@ -79,6 +79,38 @@ const Home = () => {
                 </div>
             </div> 
            </div>
+
+           {/* faq section */}
+           <div className="m-5 md:m-12 lg:mx-20 my-12">
+           <h3 className="text-start font-semibold text-4xl mt-12 mb-8">Frequenty Asked Question</h3>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" /> 
+                <div className="collapse-title text-xl font-medium">
+                    How Many Books a User Can Borrow From The Website?
+                </div>
+                <div className="collapse-content"> 
+                    <p>For Free Users Only 3 Books Can a Book. But if User Return One Book of Three User Can Borrow Another Book.</p>
+                </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" /> 
+                <div className="collapse-title text-xl font-medium ">
+                    In How Many Days The Book Should Be Returned?
+                </div>
+                <div className="collapse-content"> 
+                    <p>For Free Users Maximum 7days</p>
+                </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" /> 
+                <div className="collapse-title text-xl font-medium">
+                    Which Features Available In Premium Subscription
+                </div>
+                <div className="collapse-content"> 
+                    <p>Keep Eyes In Our Website Soon We Will Introduce</p>
+                </div>
+            </div>
+           </div>
         </div>
     );
 };

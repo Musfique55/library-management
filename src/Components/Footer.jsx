@@ -2,7 +2,7 @@ import logo from '../../public/logo.svg';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-5 bg-gradient-to-l text-white from-[#FF7854] to-[#FF5079] md:px-12 lg:px-20 ">
+            <footer className="footer p-5 bg-gradient-to-l text-white from-[#FF7854] to-[#FF5079] md:p-12 lg:px-20 lg:py-12 ">
          <aside>
             <img src={logo} alt="" />
             <p>Many Books</p>
