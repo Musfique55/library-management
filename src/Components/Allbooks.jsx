@@ -25,9 +25,9 @@ const Allbooks = () => {
     }
     return (
         <div className="m-5 md:m-12 lg:mx-20 lg:my-12">
-           <h3 className="text-center font-semibold text-4xl mt-12">All Books</h3>
+           <h3 className="text-center font-semibold text-4xl my-12">All Books</h3>
             <div>
-                <div className="flex gap-3 justify-end mb-5">
+                <div className="hidden gap-3 justify-end mb-5 md:flex lg:flex">
                     <img src={list} alt="" className="w-8 h-8 cursor-pointer" title="list view" onClick={handleListView}/>
                     <img src={grid} alt="" className="w-8 h-8 cursor-pointer" title="grid view" onClick={ handleGridView}/>
                 </div>

@@ -8,17 +8,25 @@ import 'swiper/css/navigation';
 import play from '../../public/play-store.png';
 import app from '../../public/app-store.png';
 import Banner from "./Banner";
+import axios from "axios";
+import BookCards from "./BookCards";
+import { Link } from "react-router-dom";
 const Home = () => {
 
     const [categories,setCategories] = useState([]);
-
+    const [books,setBooks] = useState([]);
     useEffect(() =>{
-        fetch('https://library-management-server-ten.vercel.app/categories')
-        .then(res => res.json())
+        axios.get('https://library-management-server-ten.vercel.app/categories')
         .then(data  => {  
-            setCategories(data)
+            setCategories(data.data)
+        })
+
+        axios.get('https://library-management-server-ten.vercel.app/allbooks')
+        .then(data => {
+            setBooks(data.data);
         })
     },[])
+    
     
     
     return (
@@ -27,10 +35,17 @@ const Home = () => {
             <div>
                 <Banner></Banner>
             </div>
-            
+
             {/* all books */}
             <div>
-
+                <h3 className="text-start px-20 font-semibold text-4xl my-12">FREE EBOOKS AND DEALS (<Link to='/allbooks' className="text-blue-700">View All</Link>)</h3>
+                <div className="grid grid-cols-1 gap-6 m-5 md:grid-cols-2 md:m-12 lg:grid-cols-3 lg:mx-20 my-12">
+                    {
+                        books.slice(0,12).map(book => {
+                            return <BookCards key={book._id} book={book}></BookCards>
+                        })
+                    }
+                </div>
             </div>
             {/* categories */}
            <div>
