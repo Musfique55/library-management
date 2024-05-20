@@ -63,7 +63,7 @@ const BookDetails = () => {
       <div className="grid gap-6 grid-cols-1 m-5 md:grid-cols-2 md:m-12 lg:grid-cols-2 lg:mx-20 lg:my-12">
         <img src={details.image} alt="" className="h-[600px] object-cover w-full "/>
         <div className="space-y-5">
-          <h3 className="text-3xl font-semibold ">{details.name}</h3>
+          <h3 className="text-3xl font-semibold ">{'details'.name}</h3>
           <p className="text-medium text-xl">By {details.author}</p>
           <ReactStars
                     count={5}
