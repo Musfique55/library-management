@@ -1,9 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "./AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../public/logo.svg";
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
+  const [isDark,setIsDark] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
+
+  useEffect(() => {
+    localStorage.setItem('theme',isDark)
+    const localTheme = localStorage.getItem('theme');
+    document.querySelector('html').setAttribute('data-theme',localTheme);
+  },[isDark])
   return (
     <div className="bg-gradient-to-r from-[#FF7854] to-[#FF5079] px-5 py-7 md:px-12 lg:px-20 ">
       <div className="navbar p-0">
@@ -81,6 +88,14 @@ const Header = () => {
               )}
             </ul>
           </div>
+          <div className=" lg:hidden">
+          {
+          isDark === 'light' ? 
+          <i onClick={() =>setIsDark('dark')} className="fa-solid fa-moon text-white text-3xl cursor-pointer mr-5 "></i>
+          : <i onClick={() => setIsDark('light')} className="fa-solid fa-sun text-white text-3xl cursor-pointer mr-5"></i> 
+          }
+          </div>
+         
           <img src={logo} alt="logo" />
         </div>
         <div className=" hidden lg:flex lg:flex-1 lg:justify-center lg:items-center">
@@ -130,6 +145,12 @@ const Header = () => {
               </NavLink>
             )}
           </ul>
+          {
+          isDark === 'light' ? 
+          <i onClick={() =>setIsDark('dark')} className="fa-solid fa-moon text-white text-3xl cursor-pointer mr-5"></i>
+          : <i onClick={() => setIsDark('light')} className="fa-solid fa-sun text-white text-3xl cursor-pointer mr-5"></i> 
+          }
+          
         </div>
         {user ? (
           <div className="hidden md:flex lg:flex gap-3 items-center">
@@ -168,7 +189,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <a className="justify-between">

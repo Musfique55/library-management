@@ -1,3 +1,4 @@
+import axios from "axios";
 import Swal from "sweetalert2";
 
 const AddBooks = () => {
@@ -11,16 +12,13 @@ const AddBooks = () => {
         const description = e.target.description.value;
         const rating = e.target.rating.value;
         const book = {bookname,image,quantity,authorname,category,description,rating};
-        fetch('https://library-management-server-ten.vercel.app/allbooks',{
-            method : 'POST',
-            headers : {
-                'content-type' : 'application/json'
-            },
-            body : JSON.stringify(book)
-        })
-        .then(res => res.json())
+        axios.post('https://library-management-server-ten.vercel.app/allbooks',book,{withCredentials : true})
         .then(data => {
-            if(data.acknowledged){
+            axios.post('http://localhost:3000/jwt',{withCredentials : true})
+            .then(data => {
+                console.log(data.data);
+            })
+            if(data.data.acknowledged){
                 Swal.fire({
                     position: "top",
                     icon: "success",

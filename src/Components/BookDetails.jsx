@@ -14,9 +14,10 @@ const BookDetails = () => {
   const borrowingDate = new Date().toDateString();
   const [error,setError] = useState('');
   const [returnDate, setReturnDate] = useState(new Date().toDateString());
+  const backDate = new Date().toDateString(returnDate);
   const email = user?.email;
   const userName = user?.displayName;
-  const detailsWithUser = { ...details, email,userName,returnDate,borrowingDate };
+  const detailsWithUser = { ...details, email,userName,backDate,borrowingDate };
 
 
   useEffect(() => {

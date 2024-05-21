@@ -68,7 +68,7 @@ const Allbooks = () => {
             <div className="list-view hidden">
                 {
                     books.map((book) => {
-                        return <div key={book._id} className="flex items-center gap-4 mb-5 border">
+                        return <div key={book._id} className="flex items-center gap-4 mb-5 border ">
                         <img src={book.image} alt="" className="w-52 h-52"/>
                         <h3 className="text-lg font-medium">{book.name}</h3>
                         <p className="font-medium text-gray-400">Author : {book.author}</p>

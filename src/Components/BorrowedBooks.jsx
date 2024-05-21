@@ -42,7 +42,7 @@ const BorrowedBooks = () => {
                             <h5 className="text-xl font-semibold">{book.name}</h5>
                             <p className="text-base font-medium text-gray-400">{book.category}</p>
                             <p className="text-base font-medium">Borrowed : {book.borrowingDate}</p>
-                            <p className="text-base font-medium text-green-500">Return : {book.returnDate}</p>
+                            <p className="text-base font-medium text-green-500">Return : {book.backDate}</p>
                             <button onClick={() =>handleReturn(book._id)} className="btn mb-5 bg-[#17a288] w-full rounded-full text-white text-lg hover:bg-[#17a288] md:mb-0 lg:mb-0">Return</button>
                         </div>
                     </div>
