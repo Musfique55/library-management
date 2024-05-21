@@ -41,6 +41,6 @@ const BookCards = ({book}) => {
 };
 
 BookCards.propTypes = {
-    book : PropTypes.object
+    book : PropTypes.object,
 }
 export default BookCards;

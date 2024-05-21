@@ -36,14 +36,14 @@ const BorrowedBooks = () => {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
                 {
                     books.map((book) => {
-                        return <div key={book._id} className="flex gap-4 border items-center rounded-lg">
+                        return <div key={book._id} className="flex flex-col gap-4 border items-center rounded-lg md:flex-row lg:flex-row">
                         <img src={book.image} alt="" className="w-72 h-72 object-cover rounded-tl-lg rounded-bl-lg"/>
                         <div className="space-y-4 pr-5">
                             <h5 className="text-xl font-semibold">{book.name}</h5>
                             <p className="text-base font-medium text-gray-400">{book.category}</p>
                             <p className="text-base font-medium">Borrowed : {book.borrowingDate}</p>
                             <p className="text-base font-medium text-green-500">Return : {book.returnDate}</p>
-                            <button onClick={() =>handleReturn(book._id)} className="btn bg-[#17a288] w-full rounded-full text-white text-lg hover:bg-[#17a288]">Return</button>
+                            <button onClick={() =>handleReturn(book._id)} className="btn mb-5 bg-[#17a288] w-full rounded-full text-white text-lg hover:bg-[#17a288] md:mb-0 lg:mb-0">Return</button>
                         </div>
                     </div>
                     })

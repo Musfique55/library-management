@@ -78,7 +78,7 @@ const Home = () => {
                 </div>
            </div>
            {/* app section */}
-           <div className="flex mt-28 mb-12 bg-gradient-to-t from-[#FF7854] to-[#FF5079] md:px-12 lg:px-20">
+           <div className="hidden  mt-28 mb-12 bg-gradient-to-t from-[#FF7854] to-[#FF5079] md:px-12 md:flex lg:px-20 lg:flex">
             <div className="w-[616px] h-[550px] relative">
                 <img src='https://manybooks.net/themes/custom/mnybks/images/mobile-app-banner/phones.png' alt="" className="absolute  object-cover h-[629px] -top-28"/>
             </div>

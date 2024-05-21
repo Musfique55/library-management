@@ -12,6 +12,7 @@ const BookDetails = () => {
   const [borrowCount,setBorrowCount] = useState([]);
   const { user } = useContext(AuthContext);
   const borrowingDate = new Date().toDateString();
+  const [error,setError] = useState('');
   const [returnDate, setReturnDate] = useState(new Date().toDateString());
   const email = user?.email;
   const userName = user?.displayName;
@@ -23,8 +24,15 @@ const BookDetails = () => {
      .then(data => {
         setBorrowCount(data.data);
      })
+     if(!details.quantity > 0 ){
+      setError('Sorry Currently The Book is not Available');
+    }else if(borrowCount.length < 3){
+      setError("You Can't Borrow more than 3 books");
+    }
   },[])
        
+
+  
   const handleBids = (e) => {
     e.preventDefault();
     axios
@@ -96,7 +104,7 @@ const BookDetails = () => {
             <button onClick={() => Swal.fire({
                 position: "top",
                 icon: "error",
-                title: "You Can't Borrow more than 3 books",
+                title: `${error}`,
                 showConfirmButton: false,
                 timer: 1500
               })} className="px-8  bg-[#17A288] py-3 font-medium rounded-full text-white mt-5">
