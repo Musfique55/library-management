@@ -1,8 +1,33 @@
-# React + Vite
+# library Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- link : https://library-management-clien-7a81f.web.app
+# Server Side
+- link : https://github.com/Musfique55/library-management-server-side
+# Features of the website
 
-Currently, two official plugins are available:
+- Custom & Google & Github Login System
+- Logout Options
+- Dark mode feature
+- Book adding features
+- Book Update & Delete Options
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# React Hooks Used 
+- React Tooltip
+- React Simple TypeWritter
+- React Router
+- React DatePicker
+- React Hook Forms
+- Sweet Alert2
+- Swiper js
+- Axios
+- Tanstack Query
+- Firebase
+- React Rating Star 
+# Server Side
+- Express Js
+- Nodemon
+- Cors
+
+# Database
+- Mongodb
+
